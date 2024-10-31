@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baldwin Peter Kpodo - DevOps Engineer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #2c3e50, #4a6fa5);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 1rem 0 0.5rem;
+            color: #e0e6ed;
+        }
+
+        .contact-details {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #c4d2e1;
+        }
+
+        .contact-details a {
+            color: #e0e6ed;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Projects section styling */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* About, Skills, Contact styling */
+        .skills-list, .contact-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .skills-list li, .contact-list li {
+            padding: 8px 0;
+        }
+
+        /* Footer styling for CV download */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .download-cv {
+            color: #e0e6ed;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Name, Photo, and Contact Info -->
+    <header>
+        <img src="your-profile-photo.jpg" alt="Baldwin Peter Kpodo" class="profile-img">
+        <h1>Baldwin Peter Kpodo</h1>
+        <p>DevOps Engineer</p>
+        <div class="contact-details">
+            <a href="https://wa.me/233551575713" target="_blank">WhatsApp: +233 551575713</a>
+            <a href="mailto:baldwinkpodo@gmail.com">baldwinkpodo@gmail.com</a>
+            <a href="https://www.linkedin.com/in/kpodo-baldwin-peter" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Yelom29" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="container">
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>React Portal Application</h3>
+                    <p>Developed a user portal with React + Vite for registration, login, and dashboard functionalities. Integrated AWS Lambda for backend processing.</p>
+                    <p><a href="https://gold-grid-fam.vercel.app/" target="_blank" rel="noopener noreferrer">View Project</a></p>
+                </div>
+                <div class="project-card">
+                    <h3>Gold Grid Real-Time Data Dashboard Solution</h3>
+                    <p>Designed a real-time data dashboard using AWS DynamoDB, automated with Terraform for seamless deployment, and integrated user notifications.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Dockerized Web Application Deployment</h3>
+                    <p>Containerized a PHP application using Docker for cross-platform compatibility and deployed it on AWS for scalability.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Automated AWS Infrastructure with Terraform</h3>
+                    <p>Automated S3 bucket provisioning with Terraform and deployed Lambda functions for event-driven processing.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>I am a dedicated DevOps Engineer with a background in systems engineering and a focus on cloud infrastructure, automation, and security. With experience in containerization, server administration, and scripting, I bring a proactive approach to developing reliable and efficient infrastructure solutions.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, Amplify, DynamoDB), Microsoft Azure</li>
+                <li><strong>Infrastructure as Code:</strong> Terraform, AWS CloudFormation</li>
+                <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, Docker</li>
+                <li><strong>Programming & Scripting:</strong> Python, PHP, Bash</li>
+                <li><strong>Database Management:</strong> AWS DynamoDB, MySQL</li>
+                <li><strong>System Administration:</strong> RedHat Linux, Ubuntu, Kali, Tail, Centos, Windows Server</li>
+            </ul>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:baldwinkpodo@gmail.com">baldwinkpodo@gmail.com</a></li>
+                <li>WhatsApp: <a href="https://wa.me/233551575713" target="_blank">+233 551575713</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kpodo-baldwin-peter" target="_blank">kpodo-baldwin-peter</a></li>
+                <li>GitHub: <a href="https://github.com/Yelom29" target="_blank">Yelom29</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer with CV download link -->
+    <footer>
+        <p>&copy; 2024 Baldwin Peter Kpodo. All rights reserved.</p>
+        <p><a href="your-cv-file-link.pdf" class="download-cv" download>Download My CV</a></p>
+    </footer>
+</body>
+</html>
