@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baldwin Peter Kpodo - DevOps Engineer Portfolio</title>
     <style>
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -24,7 +25,7 @@
             padding: 20px;
         }
 
-        /* Header styling */
+        /* Header Section */
         header {
             background: linear-gradient(to right, #2c3e50, #4a6fa5);
             color: white;
@@ -45,8 +46,11 @@
 
         h1 {
             font-size: 2.5rem;
-            margin: 1rem 0 0.5rem;
-            color: #e0e6ed;
+            margin: 0.5rem 0;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
         }
 
         .contact-details {
@@ -65,7 +69,27 @@
             text-decoration: underline;
         }
 
-        /* Section styling */
+        /* About Section */
+        .about {
+            padding: 3rem 1rem;
+            background: white;
+            margin-top: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Projects Section */
         .section {
             margin: 40px 0;
             padding: 20px;
@@ -73,12 +97,6 @@
             border-radius: 8px;
         }
 
-        h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        /* Projects section styling */
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -92,23 +110,29 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        /* About, Skills, Contact styling */
-        .skills-list, .contact-list {
+        /* Skills Section */
+        .skills-list {
             list-style: none;
             padding: 0;
             margin-top: 10px;
         }
 
-        .skills-list li, .contact-list li {
+        .skills-list li {
             padding: 8px 0;
         }
 
-        /* Footer styling for CV download */
+        /* Footer Section */
         footer {
+            margin-top: 2rem;
             text-align: center;
-            padding: 20px;
+            padding: 1rem 0;
             background: #2c3e50;
             color: white;
+        }
+
+        footer a {
+            color: #4a6fa5;
+            text-decoration: none;
         }
 
         .download-cv {
@@ -119,11 +143,11 @@
     </style>
 </head>
 <body>
-    <!-- Header Section with Name, Photo, and Contact Info -->
+    <!-- Header Section -->
     <header>
-        <img src="your-profile-photo.jpg" alt="Baldwin Peter Kpodo" class="profile-img">
+        <img src="images/profile.jpeg" alt="Baldwin Peter Kpodo" class="profile-img">
         <h1>Baldwin Peter Kpodo</h1>
-        <p>DevOps Engineer</p>
+        <p class="subtitle">DevOps Engineer | Cloud Enthusiast | Cybersecurity Advocate</p>
         <div class="contact-details">
             <a href="https://wa.me/233551575713" target="_blank">WhatsApp: +233 551575713</a>
             <a href="mailto:baldwinkpodo@gmail.com">baldwinkpodo@gmail.com</a>
@@ -132,8 +156,17 @@
         </div>
     </header>
 
-    <!-- Projects Section -->
-    <main class="container">
+    <!-- About Section -->
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Baldwin Peter Kpodo, a passionate DevOps Engineer with a focus on creating scalable and efficient solutions for modern IT infrastructures. 
+                With a background in cloud computing and cybersecurity, I specialize in automation, containerization, and systems optimization.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
         <section class="section">
             <h2>Projects</h2>
             <div class="project-grid">
@@ -157,12 +190,6 @@
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section class="section">
-            <h2>About Me</h2>
-            <p>I am a dedicated DevOps Engineer with a background in systems engineering and a focus on cloud infrastructure, automation, and security. With experience in containerization, server administration, and scripting, I bring a proactive approach to developing reliable and efficient infrastructure solutions.</p>
-        </section>
-
         <!-- Skills Section -->
         <section class="section">
             <h2>Skills</h2>
@@ -172,25 +199,14 @@
                 <li><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, Docker</li>
                 <li><strong>Programming & Scripting:</strong> Python, PHP, Bash</li>
                 <li><strong>Database Management:</strong> AWS DynamoDB, MySQL</li>
-                <li><strong>System Administration:</strong> RedHat Linux, Ubuntu, Kali, Tail, Centos, Windows Server</li>
+                <li><strong>System Administration:</strong> RedHat Linux, Windows Server</li>
             </ul>
         </section>
+    </div>
 
-        <!-- Contact Information -->
-        <section class="section">
-            <h2>Contact</h2>
-            <ul class="contact-list">
-                <li>Email: <a href="mailto:baldwinkpodo@gmail.com">baldwinkpodo@gmail.com</a></li>
-                <li>WhatsApp: <a href="https://wa.me/233551575713" target="_blank">+233 551575713</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/kpodo-baldwin-peter" target="_blank">kpodo-baldwin-peter</a></li>
-                <li>GitHub: <a href="https://github.com/Yelom29" target="_blank">Yelom29</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer with CV download link -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Baldwin Peter Kpodo. All rights reserved.</p>
+        <p>&copy; 2024 Baldwin Peter Kpodo. Designed with passion.</p>
         <p><a href="your-cv-file-link.pdf" class="download-cv" download>Download My CV</a></p>
     </footer>
 </body>
